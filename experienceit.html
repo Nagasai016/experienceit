@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience It</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script defer src="http://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div id="section1">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <div class="bottom-bg text-center">
+                <h1 class="loginhead pb-4">WELCOME TO EXPERIENCE IT</h1>
+                <button class="btn btn-primary" onclick="display('section2')">Login</button>
+                <button class="btn btn-primary" onclick="display('section3')">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2">
+        <div class="login-bg d-flex flex-column justify-content-center">
+            <h1 class="text-center login-title">Login</h1>
+            <form class="bottom-bg">
+                <input type="text" id="login-mail" placeholder="Enter Mail Address" required class="form-control mb-4">
+
+                <input type="password" id="login-password" placeholder="Enter your password" required class="form-control mb-4">
+            </form>
+            <div class="d-flex flex-row justify-content-center">
+                <button class="btn btn-primary m-5 mt-3" onclick="display('section1')">Back</button>
+                <button class="btn btn-primary m-5 mt-3" id="login-submit-btn">Submit</button>
+                <button class="btn btn-success d-none m-5 mt-3" id="login-submit-btnn" onclick="display('section4')">Continue</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="section3">
+        <div class="login-bg d-flex flex-column justify-content-center">
+            <h1 class="text-center login-title">Create Account</h1>
+            <form class="bottom-bg">
+                <input type="text" placeholder="Enter Username" id="signup-username" required class="form-control mb-4">
+
+                <input type="text" placeholder="Enter Mail Address" id="signup-mail" required class="form-control mb-4">
+
+                <input type="password" placeholder="Enter a password" id="signup-password" required class="form-control mb-4">
+                <input type="password" placeholder="Confirm your password" id="signup-confirm-password" required class="form-control mb-4">
+
+
+                <div class="d-flex flex-row justify-content-between">
+                    <button class="btn btn-primary" onclick="display('section1')">Back</button>
+                    <button class="btn btn-primary" id="signup-create-btn">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="section4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3">
+            <a class="navbar-brand" href="#">Experience It</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="user-select:none;" onclick="display('section1')">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <br class="m-3">
+        <div>
+            <img src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans@2x.webp" class="image" />
+        </div>
+        <section class="p1">
+            <h2>Top experiences on Experience It</h2>
+            <p>The best tours and activies and tickets</p>
+        </section>
+        <div class="d-flex flex-row justify-content-start">
+            <div class="conimage" onclick="display('section5')">
+                <img src="https://www.nobroker.in/blog/wp-content/uploads/2021/12/cost-of-living-in-hyderabad.jpg" alt="" class="image1" />
+                <h4 class="p1 text-center">Hyderabad</h4>
+            </div>
+            <div class="conimage" onclick="display('section7')">
+                <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/KFVXH4V6SBMMFN56YXWCW7ZNPU.jpg" alt="" class="image1" />
+                <h4 class="p1 text-center">Goa</h4>
+            </div>
+            <div class="conimage" onclick="display('section8')">
+                <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg" alt="" class="image1" />
+                <h4 class="p1 text-center">Mumbai</h4>
+            </div>
+            <div class="conimage" onclick="display('section9')">
+                <img src="https://media.istockphoto.com/id/624250932/vector/chennai-skyline-with-color-landmarks-and-blue-sky.jpg?s=612x612&w=0&k=20&c=PJ9HxKsXnCyX3UwKulJlXb7lWkilrrzKOI7nTicaRXo=" alt="" class="image1" />
+                <h4 class="p1 text-center">Chennai</h4>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container_a">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#"> About Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Trust and Safety</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Package Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- HYDERABAD -->
+    <div id="section5">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('section4')">Back</button>
+                </div>
+                <br>
+                <div class="col-6 mt-3 mb-3">
+                    <img src="https://www.hyderabadtourism.travel/images/visiting-places/headers/golconda-fort-hyderabad-tourism-entryfee-timings-package-tour.jpg" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>Golconda Tour</h1>
+                    <p>
+                        Golconda was the principal capital of the Qutub Shahi kings. The
+                        inner fort contains ruins of palaces, mosques and a hill top
+                        pavilion, which rises about 130 meters high and gives a bird's eye
+                        view of other buildings. Golconda fort is undoubtedly one of most
+                        magnificent fortress complexes in India.
+                    </p>
+                    <h2>Price: ₹2,000</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>Charminar Tour</h1>
+                    <p>
+                        The Charminar is a mosque and monument located in Hyderabad,
+                        Telangana, India. Constructed in 1591, the landmark is a symbol of
+                        Hyderabad and officially incorporated in the emblem of Telangana The
+                        Charminar's long history includes the existence of a mosque on its
+                        top floor for more than 425 years
+                    </p>
+                    <h2>Price: ₹1,500</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/68000/68046-Hyderabad-And-Vicinity.jpg" class="image3" />
+                </div>
+
+                <div class="col-6 mt-3 mb-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-N98BEQob54yN0oxDn6mdvv-tkRoQKzHGQ&usqp=CAU" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>Salar Jung Museum Tour</h1>
+                    <p>
+                        The Salar Jung Museum is an art museum located at Dar-ul-Shifa, on
+                        the southern bank of the Musi River in the city of Hyderabad,
+                        Telangana, India. It is one of the notable National Museums of
+                        India.
+                    </p>
+                    <h2>Price: ₹2,500</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>Birla Mandir Tour</h1>
+                    <p>
+                        Birla Mandir is a Hindu temple, built on a 280 feet high hillock
+                        called Naubath Pahad on a 13 acres plot in Hyderabad, Telangana,
+                        India.
+                    </p>
+                    <h2>Price: ₹1,500</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/68000/68046-Hyderabad-And-Vicinity.jpg" class="image3" />
+                </div>
+
+                <div class="col-12 text-center mt-5 mb-5">
+                    <h2>Select Places You Want To Visit :</h2>
+                    <div class="m-0 p-0">
+                        <input type="radio" id="golcondaselect" />
+                        <label for="golcondaselect">Golconda</label>
+                        <br />
+                    </div>
+
+                    <div class="m-0 p-0">
+                        <input type="radio" id="charminarselect" />
+                        <label for="charminarselect">Charminar</label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="salarselect" />
+                        <label for="salarselect">Salar Jung Museum</label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="birlaselect" />
+                        <label for="birlaselect">Birla Mandir</label>
+                    </div>
+
+                    <div>
+                        <input type="number" min="0" value="0" placeholder="Enter Number Of Persons" class="form-control" id="hydinputpersons" />
+                        <button id="hydenter" class="btn btn-outline-info m-3">
+                            Enter
+                        </button>
+                        <h3 id="hydtotalamount"></h3>
+                        <button id="hydpay" class="btn btn-outline-info mb-3 d-none" onclick="display('section6')">
+                            Proceed to pay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GOA -->
+    <div id="section7">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('section4')">Back</button>
+                </div>
+                <br>
+                <div class="col-6 mt-3 mb-3">
+                    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcT3_dc8ecNE5LOMiBUeOy07jLpEodHy2gDsHIfq21CKIRL5OVLn562ZtzIebSXVG3wu" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>Vagator Beach</h1>
+                    <p>
+                        Tourists and travel enthusiasts may have a once-in-a-lifetime experience at Vagator Beach in Goa.
+                        The sand and the water here are some of the most beautiful things you will see in Goa. Vagator beach has a magnificent view of the Arabian Sea and is one of the most popular beaches in Goa. The sunsets that you will witness here will be something to remember!
+                    </p>
+                    <h2>Price: ₹800</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>Dudhsagar Falls</h1>
+                    <p>
+                        The Dudhsagar Waterfalls, on the Goa-Karnataka border, is one of the most beautiful sceneries in Goa to quench your beauty thirst. On the Mandovi River, the four-tiered waterfall structure is one of the tallest in India and is a must-see attraction in India. From a height of nearly 1017 feet, the white water rushes down a virtually vertical mountain wall that looks magical.
+                    </p>
+                    <h2>Price: ₹3,000</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://i0.wp.com/www.zingbus.com/blog/wp-content/uploads/2022/04/dhudhsagar-waterfall.jpg?w=1200&ssl=1" class="image3" />
+                </div>
+
+                <div class="col-6 mt-3 mb-3">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/a7/1a/90/goa-quick-guide-largejpg.jpg?w=1400&h=-1&s=1" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>Baga Beach</h1>
+                    <p>
+                        Baga Beach is well-known for its glitzy nightlife. Club Tito, Cafe Mambo, Capetown Cafe, Cocktails and Dreams, and Cavala are just a few of the numerous pubs, lounges, and clubs along Tito’s Lane, which help to make Baga Beach’s nightlife one of the greatest in Goa.
+                        Baga beach is also a popular hangout spot for nature lovers who want to see the scenery. A romantic Baga beach vacation begins with a candlelit supper on the beach for couples. Some additional exciting ventures, such as fishing, paddleboarding, discos, and tattoo parlors, make the place more interesting and attractive for tourists to visit.
+                    </p>
+                    <h2>Price: ₹1,000</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>Fontainhas Goa</h1>
+                    <p>
+                        Talking about the word Fontainhas; in the Portuguese language means little fountain.
+                        Fontainhas is the beautiful quite part of Panjim city which has very old houses and amazing Portuguese architecture samples which are still well maintained and occupied by families . It is right behind the famous Immaculate conception church . You can cover this part on foot.
+
+                    </p>
+                    <h2>Price: ₹1,000</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://makeithappen.co.in/wp-content/uploads/2021/12/Fontainhas-G2-1.jpg" class="image3" />
+                </div>
+
+                <div class="col-12 text-center mt-5 mb-5">
+                    <h2>Select Places You Want To Visit :</h2>
+                    <div class="m-0 p-0">
+                        <input type="radio" id="vagatorselect" />
+                        <label for="vagatorselect">Vagator Beach</label>
+                        <br />
+                    </div>
+
+                    <div class="m-0 p-0">
+                        <input type="radio" id="dudhsagarselect" />
+                        <label for="dudhsagarselect">Dudhsagar Falls</label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="bagaselect" />
+                        <label for="bagaselect">Baga Beach</label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="fontagoaselect" />
+                        <label for="fontagoaselect">Fontainhas Goa</label>
+                    </div>
+
+                    <div>
+                        <input type="number" min="0" value="0" placeholder="Enter Number Of Persons" class="form-control" id="goainputpersons" />
+                        <button id="goaenter" class="btn btn-outline-info m-3">
+                            Enter
+                        </button>
+                        <h3 id="goatotalamount"></h3>
+                        <button id="goapay" class="btn btn-outline-info mb-3 d-none" onclick="display('section6')">
+                            Proceed to pay
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MUMBAI -->
+    <div id="section8">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('section4')">Back</button>
+                </div>
+                <br>
+                <div class="col-6 mt-3 mb-3">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/e4/85/39.jpg" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>
+                        5-Hour Private Mumbai Sightseeing Tour (Travellers Choice Award
+                        Winner)
+                    </h1>
+                    <h4>About</h4>
+                    <p>
+                        Mumbai is India’s fashion and film capital, a sprawling,
+                        history-filled city overlooking the Bay of Bengal. Discover one of
+                        the world’s most exciting metropolises on this intimate guided
+                        visit, which transports you between landmarks in a comfortable,
+                        private car. Go deep into the heart of the multifaceted city with a
+                        flexible, custom-made itinerary, covering all the top sights in a
+                        single day. Hotel pickup makes for a seamless experience.
+                    </p>
+                    <h2>Price: ₹2,000</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>Full Day South Mumbai Private City Tour with Kanheri Caves</h1>
+                    <h4>About</h4>
+                    <p>
+                        Combine a trip out to the Kanheri Caves of Maharashtra with an
+                        in-depth Mumbai city tour during this full-day, two-for-one private
+                        excursion. Spend time exploring rock-cut monuments in the lush
+                        forests of Sanjay Gandhi National Park with an English-speaking
+                        guide. Then, tick off city highlights like the Mani Bhavan Gandhi
+                        Museum, Marine Drive, and the Gateway of India.
+                    </p>
+
+                    <h2>Price: ₹1,500</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/9f/03/d0.jpg" class="image3" />
+                </div>
+
+                <div class="col-6 mt-3 mb-3">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/f5/60/f7.jpg" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>
+                        Magical Markets Tour in Mumbai with a local - Explore the coolest
+                        markets
+                    </h1>
+                    <h4>About</h4>
+                    <p>
+                        Explore the lively markets of Mumbai and learn about the city’s rich
+                        history on this guided tour. Wander around the stalls selling items,
+                        flowers, fruits and vegetables, spices, textiles, jewelry, and other
+                        necessities. Along the way, hear stories about the city and learn
+                        about its history and culture. Plus, visit the Mumba Devi Temple;
+                        the city derives its name from the Goddess Mumbadevi.
+                    </p>
+                    <h6>Suggested duration</h6>
+                    <p>More than 3 hours</p>
+                    <h2>Price: ₹2,500</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>Mumbai Street Food Tour</h1>
+                    <h4>About</h4>
+                    <p>
+                        Experience Mumbai (Bombay) through its cuisine on this four-hour
+                        evening walking tour. Your expert local guide shares the diverse
+                        culinary delights cooked up in humble street stalls throughout the
+                        busy city, which are not easily selected without an insider's
+                        knowhow. During your tour, you'll sample eight to ten of Mumbai’s
+                        favorite snacks, desserts and beverages, and learn about key
+                        elements in Indian cooking. Travel with a small group limited to six
+                        people, ensuring a personalized experience with like-minded food
+                        lovers. Read more about Mumbai Street Food Tour -
+                    </p>
+                    <h2>Price: ₹1,500</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/7f/d1/92.jpg" class="image3" />
+                </div>
+
+                <div class="col-12 text-center mt-5 mb-5">
+                    <h2>Select Places You Want To Visit :</h2>
+                    <div class="m-0 p-0">
+                        <input type="radio" id="mumbai1select" />
+                        <label for="mumbai1select">5-Hour Private Mumbai Sightseeing Tour
+                        </label>
+                        <br />
+                    </div>
+
+                    <div class="m-0 p-0">
+                        <input type="radio" id="mumbai2select" />
+                        <label for="mumbai2select">Full Day South Mumbai Private City Tour with Kanheri Caves</label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="mumbai3select" />
+                        <label for="mumbai3select">Magical Markets Tour </label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="mumbai4select" />
+                        <label for="mumbai4select">Mumbai Street Food Tour</label>
+                    </div>
+
+                    <div>
+                        <input type="number" min="0" value="0" placeholder="Enter Number Of Persons" class="form-control" id="mumbaiinputpersons" />
+                        <button id="mumbaienter" class="btn btn-outline-info m-3">
+                            Enter
+                        </button>
+                        <h3 id="mumbaitotalamount"></h3>
+                        <button id="mumbaipay" class="btn btn-outline-info mb-3 d-none" onclick="display('section6')">
+                            Proceed to pay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHENNAI -->
+    <div id="section9">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('section4')">Back</button>
+                </div>
+                <br>
+                <div class="col-6 mt-3 mb-3">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/86/19/82.jpg" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>Chennai Half Day Guided Tour in a Private Car</h1>
+                    <h4>About</h4>
+                    <p>
+                        4-hour guided tour of the city of Chennai letting you explore the
+                        key attractions of the city in a short period of time. Complimentary
+                        snacks at a local eatery. Visit places like the Kapaleeshwarar
+                        Temple, Vivekananda House, Madras Museum and more.
+                    </p>
+                    <h2>Price: ₹2,000</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>Marina Beach</h1>
+                    <h4>About</h4>
+                    <p>
+                        This expansive beach is Chennai's most famous tourist attraction,
+                        though the undercurrent is too strong for all but the strongest
+                        swimmers. Look out for the "Kannagi" statue on Marina Beach, which
+                        tells the story of the legendary character from a South Indian epic.
+                    </p>
+
+                    <h2>Price: ₹1,500</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/66/11/01/marina-beach-walk-and.jpg?w=1400&h=-1&s=1" class="image3" />
+                </div>
+
+                <div class="col-6 mt-3 mb-3">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/5e/e3/7d/20190430-163110-largejpg.jpg?w=1400&h=-1&s=1" class="image3" />
+                </div>
+                <div class="col-6 mb-3 mt-3 d-flex flex-column justify-content-center">
+                    <h1>VGP Marine Kingdom</h1>
+                    <h4>About</h4>
+                    <p>
+                        Presenting India’s largest and coolest walk-in Aquarium with a 70
+                        Mtr under water tunnel.Exotic species from 5 aquatic
+                        zones,Experience live feding shows and touch Pool exhibits.
+                    </p>
+                    <h6>Suggested duration</h6>
+                    <p>More than 3 hours</p>
+                    <h2>Price: ₹2,500</h2>
+                </div>
+
+                <div class="col-6 mb-3 d-flex flex-column justify-content-center">
+                    <h1>
+                        Total Chennai city tour in Private car with guide & lunch by Wonder
+                        tours
+                    </h1>
+                    <h4>About</h4>
+                    <p>
+                        Morning you will be picked up from your hotel in Chennai.Spend your
+                        day exploring Marina Beach,Chennai's cultural hub of Mylapore
+                        Kapaleeshwar Temple and the San Thome Basilica, followed by a
+                        traditional South Indian lunch in a local restaurant and visit the
+                        shrine at Ramakrishna Math, followed by a visit to the 17th-century
+                        Fort Saint George before returning to your hotel.
+                    </p>
+                    <h2>Price: ₹1,500</h2>
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/b9/e2/fa.jpg" class="image3" />
+                </div>
+
+                <div class="col-12 text-center mt-5 mb-5">
+                    <h2>Select Places You Want To Visit :</h2>
+                    <div class="m-0 p-0">
+                        <input type="radio" id="chennai1select" />
+                        <label for="chennai1select">Chennai Half Day Guided Tour</label>
+                        <br />
+                    </div>
+
+                    <div class="m-0 p-0">
+                        <input type="radio" id="chennai2select" />
+                        <label for="chennai2select">Marina Beach</label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="chennai3select" />
+                        <label for="chennai3select">VGP Marine Kingdom</label>
+                        <br />
+                    </div>
+
+                    <div>
+                        <input type="radio" id="chennai4select" />
+                        <label for="chennai4select">Total Chennai city tour in Private car with guide</label>
+                    </div>
+
+                    <div>
+                        <input type="number" min="0" value="0" placeholder="Enter Number Of Persons" class="form-control" id="chennaiinputpersons" />
+                        <button id="chennaienter" class="btn btn-outline-info m-3">
+                            Enter
+                        </button>
+                        <h3 id="chennaitotalamount"></h3>
+                        <button id="chennaipay" class="btn btn-outline-info mb-3 d-none" onclick="display('section6')">
+                            Proceed to pay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAYMENT -->
+    <div id="section6">
+        <div class="col-12">
+            <button class="btn btn-primary" onclick="display('section4')">Back</button>
+        </div>
+        <form action="">
+            <h1 class="main_heading">Payment Form</h1>
+
+            <h2>Contact Information</h2>
+            <p>Name: * <input type="text" name="name" required placeholder="NAGA SAI"></p>
+            <fieldset>
+                <legend>Gender * </legend>
+                <p>
+                    Male <input type="radio" selected name="gender" id="male" required>
+                    Female <input type="radio" name="gender" id="female" required>
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your Address"></textarea></p>
+            <p>Email: * <input type="email" name="email" id="email" required placeholder="nagasaigupta@gmail.com"></p>
+            <p>Pincode: * <input type="number" name="pincode" id="pincode" required placeholder="123456"></p>
+            <h2>Payment Information</h2>
+            <p>Card Type: *
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select a Card Type</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="visa">Visa</option>
+                    <option value="masteercard">MasterCard</option>
+                </select>
+            </p>
+            <p>
+                Card Number: * <input type="number" name="card_number" id="card_number" requied placeholder="1111-2222-3333-4444">
+            </p>
+            <p>
+                Expiration Date: * <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>CVV * <input type="password" name="cvv" id="cvv" requied placeholder="123"></p>
+            <p>Amount To Pay<input type="text" name="amountpaying" id="amountpaying" readonly="readonly"></p>
+        </form>
+        <button id="finalPaymentBtn" class="btn btn-outline-info" onclick="display('section12');musicPlay();">Pay Now</button>
+    </div>
+
+    <div id="section12">
+        <div class="col-12">
+            <button class="btn btn-primary" onclick="display('section4')">Back</button>
+        </div>
+        <video width="30%" height="35%" style="margin-left:35%" autoplay muted>
+            <source src="https://cdnl.iconscout.com/lottie/premium/preview-watermark/payment-successful-6219894-5117024.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls autoplay class="d-none">
+            <source id="music" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

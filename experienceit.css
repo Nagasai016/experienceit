@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.p_n {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.p_na {
+    text-decoration: none;
+    margin-left: 440px;
+}
+
+nav a:hover {
+    color: orange;
+    text-decoration: none;
+
+}
+
+header {
+    background-color: brown;
+    text-align: center;
+    padding: 58px;
+    height: 23vh;
+    font-family: "Playfair Display";
+}
+
+.he {
+    padding: 27px;
+
+    color: black;
+
+}
+
+.p {
+    padding-top: 32px;
+}
+
+.button {
+    border-radius: 60px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.image {
+    background-size: cover;
+    width: 100vw;
+}
+
+.image1 {
+    width: 22vw;
+    height: 34vh;
+    background-size: cover;
+}
+
+.conimage {
+    font-family: "Bree Serif";
+    font-weight: 100;
+    /* changed */
+    color: black;
+    padding-right: 27px;
+    padding-left: 17px;
+    padding-bottom: 8px;
+
+}
+
+.p1 {
+    color: black;
+    margin: 0;
+}
+
+section {
+    font-family: "Roboto";
+    padding: 17px;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_a {
+    max-width: 1170px;
+
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.search-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 900px;
+
+
+
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+    top: 50px;
+
+}
+
+.search-box:hover>.search-btn {
+    background: white;
+}
+
+.search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+#c1 {
+    color: black;
+}
+
+#c2 {
+    color: black;
+}
+
+#c3 {
+    color: black;
+}
+
+.bo {
+    border-radius: 5px;
+    background-color: dimgrey;
+    padding: 10px;
+    color: white !important;
+}
+
+.a:hover {
+    color: black !important;
+    text-decoration: none !important;
+    background-color: lightgoldenrodyellow;
+    border-color: #24262b;
+
+    border-style: solid;
+}
+
+#s {
+    background-color: white;
+}
+
+.bg-container {
+    background-image: url('https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?w=996&t=st=1673190609~exp=1673191209~hmac=cdc9238fa8b05ac49c219a720a035b1e18b3a5b549b4d37d31bf621042250711');
+    height: 100vh;
+    background-size: cover;
+}
+
+.bottom-bg {
+    background-color: #CDEEFA;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.login-bg {
+    background: linear-gradient(120deg, #2980b9, #ffffff);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-style {
+    color: black;
+}
+
+.login-title {
+    font-family: Sans-Serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin: 15px 30px; */
+    font-size: 17px;
+    padding: 8px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+fieldset {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.main_heading {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #4daea1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+}
+
+.image3 {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
